@@ -1,0 +1,10 @@
+:global .react-datepicker__day--outside-month {
+  color: #a8a8a8 !important;
+  pointer-events: none;
+} //보여지는달력 해당월아닌 다른월 날짜는 회색컬러로 글자처리
+
+.custom-day {
+  width: 28px;
+  height: 28px;
+  line-height: 2.8;
+}
