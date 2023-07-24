@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import AppRoute from '@routes/Route';
 
-import '@assets/css/ResetStyle.scss';
+import '@styles/main.scss';
 
 function App() {
   return (

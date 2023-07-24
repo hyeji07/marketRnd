@@ -85,7 +85,6 @@ video {
   font-size: 100%;
   box-sizing: border-box;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -100,60 +99,45 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul,
 li {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", "Noto Sans KR", "sans-serif";
-}
-html body {
-  font-size: 1.6rem;
-}
-
 ol,
 ul {
   list-style: none;
 }
-
 a {
   background-color: transparent;
   text-decoration: none;
   outline: none;
   color: inherit;
+  &:active,
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+  }
 }
-a:active, a:hover {
-  text-decoration: none;
-  color: inherit;
-  outline: 0;
-}
-
 button {
   display: flex;
   align-items: center;
@@ -169,7 +153,6 @@ button {
   font: inherit;
   color: inherit;
 }
-
 input {
   outline: none;
 }
