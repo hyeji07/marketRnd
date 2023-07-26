@@ -3,3 +3,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin ellipsis($line-cnt) {
+  overflow: hidden;
+  text-overflow: ellipsis; //...
+  letter-spacing: normal;
+  word-break: break-word; //줄바꿈시 단어로 쪼개지도록
+  overflow-wrap: break-word; //요소내에서 단어 강제 줄바꿈
+  display: -webkit-box; //웹킷브라우저-다중 라인 레이아웃
+  -webkit-box-orient: vertical; //세로 방향으로 라인배치
+  -webkit-line-clamp: $line-cnt; //글 라인 수/clamp:webkit엔진을 사용하지 않는 브라우저에서는 문제가 되기에 line-height,height를 따로 줘야함
+  line-height: 1.45;
+  max-height: 46px;
+}
