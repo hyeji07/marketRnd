@@ -1,0 +1,42 @@
+@use './../../../styles/base/mixins' as mixins;
+
+.menu-wrap {
+  height: 56px;
+  @include mixins.flex-space-between-center;
+  .menu-category-wrap {
+  }
+  .menu-category-icon {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    margin-right: 14px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MS43SDBWMHptMCA2LjE1aDE2djEuN0gwdi0xLjd6bTAgNi4xNWgxNlYxNEgwdi0xLjd6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==)
+      0px 0px / 16px 14px no-repeat;
+  }
+
+  .menu-lists {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  .menu-list {
+    width: 150px;
+    text-align: center;
+  }
+
+  .menu-delivery {
+    height: 32px;
+    padding: 6px 16px;
+    border-radius: 18px;
+    border: 1px solid rgb(238, 238, 238);
+    color: rgb(102, 102, 102);
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+    span {
+      font-weight: 500;
+      color: rgb(95, 0, 128);
+    }
+  }
+}
