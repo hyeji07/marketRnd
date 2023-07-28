@@ -22,6 +22,6 @@ html {
   margin: 0px auto;
 }
 
-.flex-center {
-  @include mixins.flex-center; //use로 가져온 파일에서 꺼내옴(mixins:내가 위에서 지은 네임스페이스 /.flex-center:클래스명)
+.flex-space-between-center {
+  @include mixins.flex-space-between-center; //use로 가져온 파일에서 꺼내옴(mixins:내가 위에서 지은 네임스페이스 /.flex-space-between-center:클래스명)
 }
