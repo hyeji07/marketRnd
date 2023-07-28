@@ -11,6 +11,7 @@ import { useCookies } from 'react-cookie';
 
 import './mainArticle.scss';
 import MainArticleBanner from './MainArticleBanner';
+import TimeArticleContainer from './TimeArticleContainer';
 
 export default function MainArticle() {
   const items = [
@@ -144,6 +145,8 @@ export default function MainArticle() {
         <button onClick={handleClickGet}>Get</button> */}
       </div>
       <MainArticleBanner imgSrc='https://product-image.kurly.com/banner/random-band/pc/img/d449a6ae-e7d9-4b4d-ba06-23d1af9a8f33.jpg' />
+
+      <TimeArticleContainer />
 
       <MainArticleBanner imgSrc='https://product-image.kurly.com/banner/random-band/pc/img/4494856a-cefc-42bc-a17b-043e90f37334.jpg' />
 

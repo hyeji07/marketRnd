@@ -15,7 +15,8 @@
       "@stores/*": ["stores/*"],
       "@styles/*": ["styles/*"],
       "@locales/*": ["locales/*"],
-      "@ChangeLanguage/*": ["ChangeLanguage/*"]
+      "@ChangeLanguage/*": ["ChangeLanguage/*"],
+      "@data/*": ["data/*"]
     },
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
