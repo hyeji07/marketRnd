@@ -25,3 +25,19 @@ html {
 .flex-space-between-center {
   @include mixins.flex-space-between-center; //use로 가져온 파일에서 꺼내옴(mixins:내가 위에서 지은 네임스페이스 /.flex-space-between-center:클래스명)
 }
+
+.main-article-bold-title {
+  padding-top: 1px;
+  font-size: 28px;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.26px;
+}
+.main-article-gray-title {
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-weight: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
