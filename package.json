@@ -44,6 +44,7 @@
     "i": "^0.3.7",
     "i18next": "^23.2.3",
     "i18next-browser-languagedetector": "^7.0.2",
+    "lottie-react": "^2.4.0",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "npm": "^9.7.2",
