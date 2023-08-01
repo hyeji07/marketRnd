@@ -6,13 +6,17 @@ import WrittenReview from '@pages/WrittenReview';
 import PaymentDetails from '@pages/PaymentDetails';
 import CalendarEx from '@pages/CalendarEx';
 import Beauty from '@pages/Beauty';
+import Goods from '@pages/Goods';
 
 export default function AppRoute(): JSX.Element {
   return (
     <Routes>
       <Route element={<LayoutDefault />}>
         <Route path='/' element={<Home />} />
+        <Route path='/goods/:id' element={<Goods />} />
+
         <Route path='/beauty' element={<Beauty />} />
+
         <Route path='/written_review' element={<WrittenReview />} />
         <Route path='/payment_details' element={<PaymentDetails />} />
         {/*react-datepicker 라이브러리 적용예제*/}
