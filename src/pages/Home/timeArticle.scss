@@ -1,0 +1,51 @@
+@import './../../styles/base/variables';
+
+.main-article-time-event-wrap {
+  display: flex;
+  margin: 80px 0;
+  .main-article-timer-wrap {
+    width: 249px;
+  }
+
+  .main-article-bold-title {
+    padding-top: 1px;
+  }
+  .main-article-gray-title {
+    padding-top: 11px;
+  }
+  .main-article-time-text {
+    font-size: 32px;
+    font-weight: 800;
+    color: $color-dark-gray;
+    display: flex;
+    gap: 10px;
+    padding: 24px 0px 6px;
+  }
+
+  .timerAnimation {
+    width: 28px;
+    svg {
+      padding-top: 2.6px;
+    }
+  }
+  .main-article-time-ps {
+    color: $color-light-gray;
+    padding-top: 26px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.43;
+    letter-spacing: -0.4px;
+  }
+
+  //
+  .products-wrap {
+    display: flex;
+    gap: 18px;
+    .product-wrap {
+      width: 338px;
+    }
+    .product-img {
+      height: 434px;
+    }
+  }
+}
