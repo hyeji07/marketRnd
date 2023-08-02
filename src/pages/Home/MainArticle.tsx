@@ -1,5 +1,8 @@
 import MultipleCarousel from '@components/carousel/MultipleCarousel';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import MainArticleBanner from './MainArticleBanner';
+import TimeArticle from './TimeArticle';
+import './mainArticle.scss';
 
 // import mainArticleDat from '@data/mainArticleData.json';
 //위보류
@@ -8,10 +11,6 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 //쿠키 테스트
 import { useCookies } from 'react-cookie';
 */
-
-import './mainArticle.scss';
-import MainArticleBanner from './MainArticleBanner';
-import TimeArticleContainer from './TimeArticleContainer';
 
 export default function MainArticle() {
   const items = [
@@ -146,7 +145,7 @@ export default function MainArticle() {
       </div>
       <MainArticleBanner imgSrc='https://product-image.kurly.com/banner/random-band/pc/img/d449a6ae-e7d9-4b4d-ba06-23d1af9a8f33.jpg' />
 
-      <TimeArticleContainer />
+      <TimeArticle />
 
       <MainArticleBanner imgSrc='https://product-image.kurly.com/banner/random-band/pc/img/4494856a-cefc-42bc-a17b-043e90f37334.jpg' />
 
