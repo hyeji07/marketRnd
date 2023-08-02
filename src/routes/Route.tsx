@@ -7,6 +7,7 @@ import PaymentDetails from '@pages/PaymentDetails';
 import CalendarEx from '@pages/CalendarEx';
 import Beauty from '@pages/Beauty';
 import Goods from '@pages/Goods';
+import StGoods from '@pages/StGoods';
 
 export default function AppRoute(): JSX.Element {
   return (
@@ -14,6 +15,9 @@ export default function AppRoute(): JSX.Element {
       <Route element={<LayoutDefault />}>
         <Route path='/' element={<Home />} />
         <Route path='/goods/:id' element={<Goods />} />
+
+        {/* st api 적용 단일상품 */}
+        <Route path='/stgoods/:id' element={<StGoods />} />
 
         <Route path='/beauty' element={<Beauty />} />
 
