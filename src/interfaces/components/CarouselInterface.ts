@@ -7,6 +7,7 @@ export namespace CarouselInterface {
     discountPrice?: number;
     review?: number;
     marker?: string;
+    soldout?: boolean;
   }
   export interface SwiperItemsInterface {
     items: SwiperItemInterface[];
