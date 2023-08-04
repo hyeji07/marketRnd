@@ -1,0 +1,66 @@
+.select-option-wrap {
+  .options-wrap {
+    width: 432px;
+    position: relative;
+    margin-top: 1.4rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .option-input {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 16.5px 14px;
+    min-height: 40px;
+    font-weight: 400;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .option-common {
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    letter-spacing: 0.00938em;
+    font-size: 12px;
+    position: absolute;
+    background: #fff;
+    li {
+      border-bottom: 1px solid rgb(221, 221, 221);
+      padding: 11.5px 16px;
+      display: flex;
+      justify-content: space-between;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .option-common-price {
+    display: inline-block;
+  }
+
+  .required-option {
+    display: none;
+  }
+  .view-required-option {
+    display: block;
+    z-index: 2;
+  }
+
+  .sub-option {
+    display: none;
+    z-index: 1;
+  }
+  .view-sub-option {
+    display: block;
+  }
+}
