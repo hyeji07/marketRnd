@@ -1,12 +1,16 @@
 import calculatePercent from '@helpers/calculatePercent';
 import { ProductInterface } from '@interfaces/components/ProductInterface';
 import './goodsInfo.scss';
+import SelectOptions from '@components/selectOptions/SelectOptions';
 
 export default function GoodsInfo({
   item,
-}: {
+}: /* {
   item: ProductInterface.ItemInterface;
-}) {
+} */ any) {
+  // console.log(item.optionList.list);
+  // console.log(item.optionList.list[0].subOption.list);
+
   return (
     <div className='goods-info-wrap'>
       <div
@@ -89,7 +93,7 @@ export default function GoodsInfo({
             <dl>
               <dt>알레르기정보</dt>
               <dd>
-                {item.allergy.split('\n').map((line, index) => (
+                {item.allergy.split('\n').map((line: string, index: number) => (
                   <p key={index}>{line}</p>
                 ))}
               </dd>
@@ -101,6 +105,16 @@ export default function GoodsInfo({
               <dd>{item.sellByDate}</dd>
             </dl>
           )}
+
+          <dl>
+            <dt>상품선택</dt>
+            <dd>
+              <SelectOptions
+                option={item.optionList.list}
+                // option2={item.optionList.list[].subOption.list}
+              />
+            </dd>
+          </dl>
         </div>
       </div>
     </div>
