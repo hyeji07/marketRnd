@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import GoodsInfo from './GoodsInfo';
 import './goods.scss';
+import GoodsDetail from './GoodsDetail';
+import GoodsDetailInfo from './GoodsDetailInfo';
 
 export default function Goods() {
   const { id } = useParams();
@@ -26,6 +28,55 @@ export default function Goods() {
       allergy:
         '* 우유 크림빵 \n- 밀, 대두, 아황산류, 알류(계란), 우유 함유 \n* 초코 크림빵 \n- 밀, 대두, 아황산류, 알류(계란), 우유 함유 \n* 흑임자 크림빵 \n- 밀, 대두, 아황산류, 알류(계란), 우유 함유 \n- 새우, 돼지고기, 견과류, 땅콩 혼입가능',
       sellByDate: '수령일 포함 최소 120일 남은 제품을 보내 드립니다',
+      img: 'https://img-cf.kurly.com/shop/data/goodsview/20221207/gv40000463955_1.jpg',
+      optionList: {
+        list: [
+          {
+            id: 1,
+            name: '옵션1',
+            img: 'https://img-cf.kurly.com/shop/data/goods/1644455895992l0.jpg',
+            salePrice: 1000,
+            subOption: {
+              list: [
+                {
+                  id: 11,
+                  name: '옵션1-1',
+                  img: 'https://img-cf.kurly.com/shop/data/goods/1644455895992l0.jpg',
+                  salePrice: 100,
+                },
+                {
+                  id: 12,
+                  name: '옵션1-2',
+                  img: 'https://img-cf.kurly.com/shop/data/goods/1644455895992l0.jpg',
+                  salePrice: 100,
+                },
+              ],
+            },
+          },
+          {
+            id: 2,
+            name: '옵션2',
+            img: 'https://img-cf.kurly.com/shop/data/goods/1644455895992l0.jpg',
+            salePrice: 1000,
+            subOption: {
+              list: [
+                {
+                  id: 21,
+                  name: '옵션2-1',
+                  img: 'https://img-cf.kurly.com/shop/data/goods/1644455895992l0.jpg',
+                  salePrice: 200,
+                },
+                {
+                  id: 22,
+                  name: '옵션2-2',
+                  img: 'https://img-cf.kurly.com/shop/data/goods/1644455895992l0.jpg',
+                  salePrice: 200,
+                },
+              ],
+            },
+          },
+        ],
+      },
     },
     {
       url: 'https://img-cf.kurly.com/shop/data/goods/16468780291l0.jpg',
@@ -65,6 +116,8 @@ export default function Goods() {
     <div className='goods-wrap inner-1050'>
       <div className='goods-main-wrap'>
         <GoodsInfo item={item} />
+        <GoodsDetail item={item} />
+        <GoodsDetailInfo item={item} />
       </div>
     </div>
   );
