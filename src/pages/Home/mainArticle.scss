@@ -12,6 +12,7 @@
     line-height: 1.15;
     letter-spacing: -0.26px;
     font-weight: 500;
+    cursor: pointer;
     @include mixins.flex-center-center;
 
     .icon-more {
