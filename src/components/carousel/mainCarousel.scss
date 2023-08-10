@@ -13,6 +13,10 @@
     height: 370px;
   }
 
+  .swiper-slide {
+    cursor: pointer;
+  }
+
   //prev,next 버튼 커스텀
   .swiper-button-prev,
   .swiper-button-next {
