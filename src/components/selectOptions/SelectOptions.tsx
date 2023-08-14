@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './selectOptions.scss';
 import formatNumberCommas from '@helpers/formatNumberCommas';
 
@@ -15,6 +15,8 @@ export default function SelectOptions({ option }: any) {
   });
   const [subOption, setSubOption] = useState('추가선택');
   const [viewSubOption, setViewSubOption] = useState(false);
+
+  const [amount, setAmount] = useState(1);
 
   const handleRequiredOptions = () => {
     setViewRequiredOption(!viewRequiredOption);
@@ -36,8 +38,25 @@ export default function SelectOptions({ option }: any) {
     setSubOption(option.name);
     setViewSubOption(false);
   };
+  ///////////////////////
+  /* 하다맘  이어서계속하기 8/11 */
+  const handleAmountMinus = () => {
+    if (amount > 1) {
+      setAmount(amount - 1);
+    }
+  };
+  const handleAmountPlus = () => {
+    if (amount > 0) {
+    }
+    setAmount(amount);
+    console.log(amount);
+  };
 
+  const handleSelectOption = () => {};
+  /*
   console.log(subOptionObject.name);
+
+  useEffect(() => {}, [amount]); */
 
   return (
     <div className='select-option-wrap'>
@@ -85,14 +104,20 @@ export default function SelectOptions({ option }: any) {
         )}
       </ul>
 
-      <div>
+      <div className='select-option-amount-wrap'>
         <p>
           {subOptionObject.name} <span>{subOptionObject.salePrice}</span>
         </p>
         <div>
-          <p>-</p>
-          <input type='text' value={1} />
-          <p>+</p>
+          <p
+            className='select-option-amount select-option-minus'
+            onChange={handleAmountMinus}
+          ></p>
+          <input type='text' value={amount} onChange={handleSelectOption} />
+          <p
+            className='select-option-amount select-option-plus'
+            onChange={handleAmountPlus}
+          ></p>
         </div>
       </div>
     </div>
